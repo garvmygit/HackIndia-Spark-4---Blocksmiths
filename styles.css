@@ -1,18 +1,191 @@
+/* Global Styles */
 body {
     background-color: #121212;
-    color: #f1f1f1;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding-bottom: 50px;
 }
 
+/* Heading Styles */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00adb5;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1f4068;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #00adb5 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00adb5 !important;
+}
+
+.dropdown-menu {
+    background-color: #162447;
+    border: none;
+}
+
+.dropdown-item {
+    color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #00adb5;
+    color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+/* Devices Section */
 .device-list ul {
-    list-style: none;
     padding: 0;
+}
+
+.device-list .list-group-item {
+    background-color: #1f4068;
+    color: #e0e0e0;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-list .list-group-item:hover {
+    background-color: #0f3460;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .device-status {
     font-weight: bold;
+    color: #00adb5;
+}
+
+.device-list .btn {
+    background-color: #00adb5;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.device-list .btn:hover {
+    background-color: #00c1c5;
+}
+
+/* Control Device Form */
+.device-control form {
+    display: flex;
+    align-items: center;
+}
+
+.device-control .form-control {
+    background-color: #1f4068;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-control .form-control:focus {
+    background-color: #162447;
+    outline: none;
+    box-shadow: 0 0 5px #00adb5;
+}
+
+.device-control .btn {
+    background-color: #00adb5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.device-control .btn:hover {
+    background-color: #00c1c5;
+}
+
+/* Token Balance Section */
+.token-balance {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.token-balance h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .token-balance p {
-    font-size: 1.5em;
-    color: #ff9800;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00adb5;
+    margin: 0;
+}
+
+/* Utility Classes */
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
