@@ -11,10 +11,10 @@ function displayDevices() {
 
     devices.forEach(device => {
         const li = document.createElement('li');
-        li.className = 'device-item';
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
         li.innerHTML = `
             ${device.name} (ID: ${device.id}) - Status: <span class="device-status">${device.status}</span>
-            <button onclick="toggleDevice('${device.id}')">Toggle</button>
+            <button class="btn btn-primary btn-sm" onclick="toggleDevice('${device.id}')">Toggle</button>
         `;
         deviceList.appendChild(li);
     });
