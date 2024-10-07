@@ -1,81 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #121212;
     color: #f1f1f1;
-    margin: 0;
-    padding: 20px;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-.device-list {
-    margin-bottom: 20px;
-}
-
-.device-control {
-    margin: 20px 0;
-    text-align: center;
-}
-
-#control-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-#control-form input {
-    padding: 10px;
-    border: 1px solid #4CAF50;
-    border-radius: 4px;
-    background-color: #2c2c2c;
-    color: #f1f1f1;
-}
-
-#control-form button {
-    padding: 10px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#control-form button:hover {
-    background-color: #45a049;
-}
-
-.device-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    margin: 5px 0;
+.device-list ul {
+    list-style: none;
+    padding: 0;
 }
 
 .device-status {
     font-weight: bold;
 }
 
-.token-balance {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .token-balance p {
     font-size: 1.5em;
-    color: #ff9800; /* Token balance color */
+    color: #ff9800;
 }
