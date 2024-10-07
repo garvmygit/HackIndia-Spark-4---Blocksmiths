@@ -117,18 +117,28 @@ h2 {
     font-size: 1.3rem;
 }
 
-.device-list .btn {
-    background-color: #00adb5;
-    border: none;
-    color: #ffffff;
-    padding: 10px 18px;
-    transition: background-color 0.4s ease, transform 0.3s ease;
-    border-radius: 8px;
+/* Custom Toggle Switch */
+.custom-control {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.device-list .btn:hover {
-    background-color: #00c1c5;
-    transform: translateY(-3px);
+.custom-switch {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-control-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-control-label {
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 /* Control Device Form */
@@ -187,15 +197,6 @@ h2 {
     font-weight: bold;
     color: #00adb5;
     margin-top: 10px;
-}
-
-/* Buttons */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:focus {
-    outline: none;
 }
 
 /* Footer */
