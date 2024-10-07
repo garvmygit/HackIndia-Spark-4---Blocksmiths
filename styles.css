@@ -1,58 +1,67 @@
 /* Global Styles */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
     padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
-/* Heading Styles */
 h1, h2 {
     color: #ffffff;
     font-weight: 700;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    padding-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     border-bottom: 2px solid #00adb5;
+    padding-bottom: 10px;
 }
 
 /* Navbar Styling */
 .navbar {
-    background-color: #1f4068;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #162447, #1f4068);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
 .navbar-brand {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #00adb5 !important;
+    letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: #e0e0e0 !important;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-link:hover {
     color: #00adb5 !important;
+    text-decoration: underline;
 }
 
 .dropdown-menu {
     background-color: #162447;
     border: none;
+    border-radius: 8px;
+    padding: 10px 0;
 }
 
 .dropdown-item {
     color: #e0e0e0;
+    padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -63,63 +72,69 @@ h2 {
 
 /* Container Styling */
 .container {
-    margin-top: 50px;
     max-width: 1200px;
+    margin: 60px auto;
 }
 
 /* Devices Section */
 .device-list ul {
+    list-style: none;
     padding: 0;
 }
 
 .device-list .list-group-item {
     background-color: #1f4068;
     color: #e0e0e0;
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 15px;
-    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .device-list .list-group-item:hover {
     background-color: #0f3460;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .device-status {
     font-weight: bold;
     color: #00adb5;
+    font-size: 1.2rem;
 }
 
 .device-list .btn {
     background-color: #00adb5;
     border: none;
     color: #ffffff;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+    padding: 10px 18px;
+    transition: background-color 0.4s ease;
+    border-radius: 8px;
 }
 
 .device-list .btn:hover {
     background-color: #00c1c5;
+    transform: translateY(-3px);
 }
 
 /* Control Device Form */
 .device-control form {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .device-control .form-control {
     background-color: #1f4068;
     color: #e0e0e0;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 300px;
     margin-right: 10px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -127,65 +142,79 @@ h2 {
 .device-control .form-control:focus {
     background-color: #162447;
     outline: none;
-    box-shadow: 0 0 5px #00adb5;
+    box-shadow: 0 0 8px #00adb5;
 }
 
 .device-control .btn {
     background-color: #00adb5;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
 .device-control .btn:hover {
     background-color: #00c1c5;
+    transform: translateY(-3px);
 }
 
 /* Token Balance Section */
 .token-balance {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .token-balance h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .token-balance p {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: #00adb5;
-    margin: 0;
+    margin-top: 10px;
 }
 
 /* Utility Classes */
 .mt-5 {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .mb-5 {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .text-center {
     text-align: center;
 }
 
+/* Button Global */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:focus {
+    outline: none;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .navbar-brand {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .form-control {
+        width: 100%;
     }
 }
