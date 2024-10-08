@@ -2,20 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById('login-form');
     const signUpForm = document.getElementById('signup-form');
 
-    // Validate login form
+    // Validate login form and redirect to home.html
     loginForm.addEventListener('submit', function (event) {
         event.preventDefault();
         const email = document.getElementById('login-email').value;
         const password = document.getElementById('login-password').value;
 
         if (validateEmail(email) && password.length >= 6) {
-            alert('Login successful!');
+            // Simulate successful login and redirect to home.html
+            alert('Login successful! Redirecting to home page...');
+            window.location.href = 'home.html';  // Redirect to home.html
         } else {
             alert('Invalid login credentials');
         }
     });
 
-    // Validate signup form
+    // Validate signup form (No redirection here, just sign-up logic)
     signUpForm.addEventListener('submit', function (event) {
         event.preventDefault();
         const username = document.getElementById('signup-username').value;
